@@ -38,4 +38,20 @@
     };
 }
 
+/*
+    anotherStarRatingView.delegate = self;
+    
+    UILabel *starRatingValue = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 100, self.view.bounds.size.height / 2 + 20, 200, 40) ];
+    [self.view addSubview:starRatingValue];
+    starRatingValue.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    self.starRatingValue = starRatingValue;
+    self.starRatingValue.textColor = [UIColor whiteColor];
+    self.starRatingValue.textAlignment = NSTextAlignmentCenter;
+}
+
+- (void)djwStarRatingChangedValue:(DJWStarRatingView *)view
+{
+    self.starRatingValue.text = [NSString stringWithFormat:@"Value updated to %.1f", view.rating];
+}
+*/
 @end
